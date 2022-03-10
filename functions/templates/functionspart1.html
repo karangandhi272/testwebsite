@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'part1.css' %}">
+        <script src="{% static 'part1.js' %}"></script>
+ 
+        <title>Introduction to Functions</title>
+
+    </head>
+    <body>
+    <div class = "maindiv">
+        <nav>
+            <ul>
+                <li><a href=""></a>Home</li>
+            </ul>
+        </nav>
+    </div> 
+    <div class = "content">
+        <div class = "title">  
+            <h1>Introduction To Functions</h1>
+            <h3><button onclick="recap()"> Recap</button></h3> 
+        </div>
+        <div id = "recaps">
+        <ul>
+            <li>Order of operations </li>
+            <li>Basic find x: 5 + x = 3 and word problems</li>
+            <li>Combining like terms and word problems for that  </li>
+            <li> Order of operation and combining like terms </li>
+            <li> Inequalities </li>
+            <li>Systems of linear equations </li>
+            <li> Introduction to powers </li>
+            <li>How factor quadratic equations to find x</li>
+            <li>GO TO ALEGRA BASIC FOR RECAP</li>
+        
+
+        </ul>
+        </div>
+        <p>A functions is simpy a relationship between one varible with another. In most cases these varibles include x and y. The x is manipulatied to result in a y.
+            The only rule with a function is one x(in this case) varible cannot result in two y varible. However two different x varibles can lead to one y varible and 
+            that is completely fine. 
+        </p>
+        <div class="exampleimgset1">
+            <div><img src="{% static 'function1img1.PNG'%}" alt=""/><p>This is a functions as there is only 1 y for every x (y = x + 1)</p></div>
+            <div><img src="{% static 'function1img2.PNG' %}" alt=""/><p>This is a functions as there is only 1 y for every x (y = x^2)</p></div>
+            <div><img src="{% static 'function1img3.PNG' %}" alt=""/><p>This is NOT a function as there can be 2 y numbers for one x (x^2 + y^2 = 25)</p></div>
+
+        </div>
+        <p>
+            A easy representation to dectect a function is simply creating a vertical line (vertical line test). If the line anywhere connects to two point it is NOT a function.
+        </p>
+        <div class="exampleimgset2">
+            <div><img src="{% static 'function1img4.PNG'%}" alt=""/><p>Fails vertical line test</p></div>
+            <div><img src="{% static 'function1img5.PNG' %}" alt=""/><p>Does not fail vertical line test<t/p></div>
+   
+
+        </div>
+        <div class="exampleimgset3">
+            <div><img src="{% static 'function1img6.PNG'%}" alt=""/><p>A table: Not a function as there are two different y values for one x value (The 1 has two different y values, 5 and 6)</p></div>
+            <div><img src="{% static 'function1img7.PNG' %}" alt=""/><p>A set: A function as there are only 1 y value for each x value<t/p></div>
+   
+
+        </div>
+
+        <h3 class = "questiontitle"> Questions </h3>
+   
+        <div class = "knowledgetester">
+            <div><img src="{% static 'function1img8.PNG'%}" alt=""/>
+                <select id = "question1">
+                    <option value = "function">Function</option>
+                    <option value = "notfunction">Not Function</option>
+                </select>
+            </div>
+            <div><img src="{% static 'function1img9.PNG' %}" alt=""/>
+                <select id = "question2">
+                    <option value = "function">Function</option>
+                    <option value = "notfunction">Not Function</option>
+                </select>
+
+            </div>
+            <div><img src="{% static 'function1img10.PNG' %}" alt=""/>
+                <select id = "question3">
+                    <option value = "function">Function</option>
+                    <option value = "notfunction">Not Function</option>
+                </select>
+        
+            
+            </div>
+
+
+        </div>
+    
+        <div class = "enter"><button  onclick="enterquestions()"> Enter </button></div>
+        <p id = "results"></p>
+    </div>
+
+
+</html>
